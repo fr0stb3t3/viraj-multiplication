@@ -1,0 +1,9 @@
+.scoreboard {
+	border: yellow 5px solid;
+	background-color: aqua;
+	position: absolute;
+	right: 2%;
+	top: -30px;
+	padding: 10px;
+	z-index: 5;
+  }

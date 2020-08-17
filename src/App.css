@@ -1,38 +1,85 @@
 .App {
   text-align: center;
+  background-color: white;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.AppHeading{
+  /* position: relative; */
+  width: 100%;
+  background-color: black;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.AppHeading > div {
+  font-size: 30px;
+  letter-spacing: 5px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content{
+  position: relative;
+  padding-top: 5%;
+  z-index: 2;
+  height: 100%;
+}
+
+/* .InstructionParentContainer{
+  z-index: 4;
+  position: absolute;
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: yellow;
+  font-size: x-large;
+  border: blue 5px solid;
+}
+
+.StartGame-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:75px;
+}
+
+.StartGame{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: cyan 5px solid;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+
+  box-shadow: black 0px 0px 20px;
+  font-size: 16px;
+  transition: background 0.2s ease-in , color 0.2s, width 0.2s, height 0.2s, transform 0.2s, shadow 0.2s, font-size 0.2s;
+
+
+} */
+
+.StartGame:hover{
+  background-color: black;
+  color: white;
+  width: 150px;
+  height: 150px;
+  transform: translateY(-25px);
+  box-shadow: #333333 0px 0px 80px;
+  font-size: 20px;
+}
+.StartGame > p {
+  margin: auto;
+}
+
+.StartGameButton{
+  height: 100px;
+  width: 100px;
 }

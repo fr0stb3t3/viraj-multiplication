@@ -1,0 +1,35 @@
+.clock{
+	z-index: 4;
+	background: radial-gradient(circle, rgba(144,174,228, 1) 21%, rgba(95,76,108,1) 95%);;
+	color: seashell;
+
+	padding: 25px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	height: 100px;
+	width: 100px;
+
+	border-radius: 50%;
+	
+
+	font-size: 2em;
+}
+
+.clock::before{
+	transform: skewY(20deg);
+	transform-origin: bottom;
+	height: 100px;
+	width: 100px;
+	position: absolute;
+
+	content: '';
+	z-index: 0;
+	
+}
+
+.clock-flex-center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

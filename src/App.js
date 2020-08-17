@@ -1,24 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 
+import Instructions from './components/Instructions';
+import Game from './components/Game';
+import Clock from './components/Clock';
+
 function App() {
+  let [toStartTimer, setToStartTimer] = useState(false);
+  let [toSendAlert, setToSendAlert] = useState(false);
+
+  const startTimer = () => {
+    setToStartTimer(true);
+  }
+
+  const sendAlert = () => {
+    setToSendAlert(true);
+    setToStartTimer(false);
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="AppHeading">
+        <div>
+          Multiplication Gameee!!!
+        </div>
+      </div>
+      <div className="content">
+        <Clock toStart={toStartTimer} passedSendAlert={sendAlert} />
+        <Game sendAlert={toSendAlert} />
+        <Instructions passedStartTimer={startTimer} />
+      </div>
     </div>
   );
 }

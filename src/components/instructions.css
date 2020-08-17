@@ -1,0 +1,48 @@
+#InstructionCanvas{
+	z-index: 4;
+	position: absolute;
+	background-color: white;
+	height: 100%;
+	width: 100%;
+	top: 0%;
+	padding-top: 100px;
+
+	transform-origin: bottom left;
+	transition: transform 1.5s ease-in-out;
+}
+
+.InstructionParentContainer{
+	/* height: 100%; */
+	/* width: 100%; */
+	margin-left: 20%;
+	margin-right: 20%;
+	background-color: yellow;
+	font-size: x-large;
+	border: blue 5px solid;
+  }
+  
+  .StartGame-flex{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding:75px;
+  }
+  
+  .StartGame{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  
+	border: cyan 5px solid;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+  
+	box-shadow: black 0px 0px 20px;
+	font-size: 16px;
+	transition: background 0.2s ease-in , color 0.2s, width 0.2s, height 0.2s, transform 0.2s, shadow 0.2s, font-size 0.2s;
+  
+	/* background: lawngreen; */
+  
+  }
+  
